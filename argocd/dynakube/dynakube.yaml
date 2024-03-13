@@ -1,0 +1,17 @@
+apiVersion: dynatrace.com/v1beta1
+kind: DynaKube
+metadata:
+  name: mnirtl-cluster
+  namespace: dynatrace
+spec:
+  apiUrl: https://ztn45169.sprint.dynatracelabs.com/api
+
+  networkZone: mnirtl-cluster
+
+  oneAgent:
+    cloudNativeFullStack: {}
+
+  activeGate:
+    capabilities:
+      - kubernetes-monitoring
+      - routing

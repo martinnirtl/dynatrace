@@ -1,0 +1,4 @@
+installCRD: true
+
+csidriver:
+  enabled: true
